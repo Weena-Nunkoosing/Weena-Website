@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nail Salon Reviews & Subscription</title>
+<style>
+  /* Your CSS styles here */
+ 
+  body {
+    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background: url('./images/review\ background.jpg') ; opacity: 90%;
+    background-size: cover;
+        
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+
+  .container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.255);
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  h1, h2, h3{
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+  }
+
+  h3 a{
+    text-align: center;
+    color: #09066d;
+    margin: 20px 0;
+  }
+
+   a{
+    text-align: center;
+    
+  }
+
+  .review-container, .subscription-container {
+    background-color: rgb(252, 220, 220);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+</style>
+</head>
+<body>
+<div class="review-container">
+  <h1>Nail Salon Reviews</h1>
+  
+  <form id="reviewForm">
+    <h3>Submit Your Review</h3>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <br>
+    <div>
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" rows="4" required></textarea>
+    </div>
+    <br>
+    <button type="submit">Submit Review</button>
+  </form>
+  
+</div>
+<div class="subscription-container">
+  <h2>Subscribe for Updates</h2>
+  <form id="subscribeForm">
+    <div>
+      <label for="email">Email:</label>
+      
+      <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+<script>
+  const reviewForm = document.getElementById("reviewForm");
+  const subscribeForm = document.getElementById("subscribeForm");
+
+  reviewForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Collect review data and add to the review section (similar to previous example)
+    // ...
+
+    reviewForm.reset();
+  });
+
+  subscribeForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+
+    const email = subscribeForm.email.value;
+
+    // Here, you can implement the logic to send the subscription data to your backend
+    // ...
+
+    subscribeForm.reset();
+    alert("Thank you for subscribing!");
+  });
+
+</script>
+
+   
+
+
+    <a href="./index.html" >
+                
+     <h3><button type="submit" class="btn btn-warning">Home</button>  </a> </h3>
+
+
+
+
+
+
+
+</body>
+</html>

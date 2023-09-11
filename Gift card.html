@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nail Salon eGift Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background: url('./images/gift\ nail.webp') no-repeat center center fixed;
+            background-size: cover;
+          
+           
+        }
+
+        .gift-card {
+            width: 500px;
+            background-color: #f6c4d0;
+            border: 2px solid #e0e0e0;
+            border-radius: 80px;
+            padding: 50px;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .salon-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .gift-card h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .gift-card p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .gift-card form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="number"] {
+            width: 80px;
+        }
+
+        a {
+            background-color: #e0415e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #dd2868;
+        }
+    </style>
+</head>
+<body>
+    <div class="gift-card">
+        <img src="./images/Personal logo.png" alt="Salon Logo" class="salon-logo">
+        <h1>Nail Salon eGift Card</h1>
+        <p>Treat your loved one to a pampering experience at our nail salon!</p>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="recipient_name">Recipient's Name:</label>
+                <input type="text" id="recipient_name" name="recipient_name" required>
+            </div>
+            <div class="form-group">
+                <label for="recipient_email">Recipient's Email:</label>
+                <input type="email" id="recipient_email" name="recipient_email" required>
+            </div>
+            <div class="form-group">
+                <label for="gift_amount">Gift Amount (Rs):</label>
+                <input type="number" id="gift_amount" name="gift_amount" min="10" step="10" required>
+            </div>
+            <br></br>
+             
+        </form>
+        <h3><a href="./Buy Egift card.html">Buy Egift Card</a></h3>
+        <br>
+        <h3><a href="./index.html">Home</a></h3>
+            
+       
+    </div>
+</body>
+</html>
